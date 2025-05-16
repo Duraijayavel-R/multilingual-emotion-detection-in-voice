@@ -1,0 +1,67 @@
+
+# Multilingual Emotion Detection in Voice
+
+This Jupyter Notebook demonstrates a system for detecting emotions from voice recordings, with support for multiple languages. It uses audio processing and machine learning techniques to classify emotions from spoken input.
+
+## Features
+
+* Processes and extracts features from voice recordings (e.g., MFCCs).
+* Supports multilingual datasets or recordings.
+* Trains a machine learning model to classify emotions.
+* Evaluates performance using accuracy and confusion matrix.
+* Optionally allows real-time emotion detection from microphone input.
+
+## Requirements
+
+Install required libraries with:
+
+```bash
+pip install librosa numpy pandas scikit-learn matplotlib seaborn soundfile
+```
+
+Additional libraries may be needed for multilingual support and audio recording.
+
+## Workflow Summary
+
+1. **Data Loading**
+   Load an emotion-labeled voice dataset, possibly multilingual (e.g., RAVDESS, EMO-DB, etc.).
+
+2. **Feature Extraction**
+   Use `librosa` to extract MFCC (Mel Frequency Cepstral Coefficients) and other relevant audio features.
+
+3. **Data Preprocessing**
+
+   * Normalize or scale features.
+   * Encode emotion labels.
+   * Split into training and test sets.
+
+4. **Model Training**
+   Train classifiers such as:
+
+   * SVM (Support Vector Machine)
+   * Random Forest
+   * MLP (Multi-Layer Perceptron)
+
+5. **Evaluation**
+
+   * Accuracy score
+   * Confusion matrix
+   * Visualization of model performance
+
+6. **Prediction & Live Inference (Optional)**
+   Record audio and detect the speaker's emotion in real time.
+
+## Applications
+
+* Emotion-aware virtual assistants
+* Mental health monitoring
+* Call center emotion tracking
+* Human-computer interaction
+
+## Notes
+
+* Accuracy may vary with dataset language and quality.
+* Additional preprocessing may be needed for noise reduction and speaker normalization.
+* Pre-trained models could improve cross-language performance.
+
+
